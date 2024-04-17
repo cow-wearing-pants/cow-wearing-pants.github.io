@@ -10,15 +10,16 @@ body {
 }
 
 #header {
-  height: 30px;
+  height: 100px;
   display: flex;
   align-items: center;
-  background: linear-gradient(#444444, #333333);
+  background: linear-gradient(rgb(78.2, 78.2, 85), rgb(69, 69, 75));
   color: #bbbbbb;
 }
 
 #headerContent {
   margin-left: 10px;
+  text-align: center;
 }
 
 #page {
@@ -29,11 +30,23 @@ body {
 
 #sideBar {
   width: 100px;
-  background: red;
+  background: rgb(183, 0, 255);
 }
 
 #content {
-  background: blue;
+  background: rgb(225, 150, 255);
   flex: 1 0 auto;
   /* enable grow, disable shrink */
+}
+
+p {
+  color: darkslategrey;
+}
+
+a {
+  color: black;
+}
+
+h1, h2 {
+  color: pink;
 }
