@@ -5,7 +5,7 @@ html {
 body {
   height: 100%;
   margin: 0;
-  font-family: Ubuntu;
+  font-family: sans-serif;
   background: linear-gradient(#b3ffab, #67fffc);
 }
 
