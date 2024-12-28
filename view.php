@@ -1,4 +1,3 @@
-
 <?php
 
 #we'll use the url parameter "post-id" to get the file path
@@ -13,14 +12,15 @@ $filePath = "files/" . $path . ".json";
 $data = [];
 
 if(file_exists($filePath)){
+
    $data = json_decode(file_get_contents($filepPath));
+
 } else {
    #handle errors here
    echo "Post not found";
    exit;
 }
 ?>
-
 <!doctype html>
 <html>
    <head>

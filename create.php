@@ -1,4 +1,5 @@
 <?php
+
 #require basic http authentication, built in to most browsers
 
 if (!isset($_SERVER['PHP_AUTH_USER']) || $_SERVER['PHP_AUTH_USER'] !== 'your-username' || $_SERVER['PHP_AUTH_PW'] !== 'your-password') {
@@ -11,6 +12,7 @@ if (!isset($_SERVER['PHP_AUTH_USER']) || $_SERVER['PHP_AUTH_USER'] !== 'your-use
 #check if form was submitted
 
 if(isset($_POST["title"])){
+
    #get the values submitted
    $title = $_POST["title"];
    $content = $_POST["content"];
@@ -28,6 +30,7 @@ if(isset($_POST["title"])){
    file_put_contents("files/" . $path . ".json", $json);
 
    #Your blog post is now saved!
+
 }
 
 ?>
@@ -46,3 +49,4 @@ if(isset($_POST["title"])){
       </form>
    </body>
 </html>
+

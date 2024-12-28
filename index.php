@@ -19,7 +19,7 @@ usort($files, function($a, $b) {
 foreach($files as $file){
 
    $data = json_decode(file_get_contents($file));
-
+   
    $filePath = basename($file, '.json');
 
    echo '<a href="view.php?post-id=' . $filePath . '">';
@@ -27,7 +27,9 @@ foreach($files as $file){
    echo '<h1>' . htmlspecialchars($data->title) . '</h1>';
 
    echo '</a>';
+
 }
+
 ?>
    </body>
 </html>
